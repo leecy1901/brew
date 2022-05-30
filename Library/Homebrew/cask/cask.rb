@@ -249,7 +249,7 @@ module Cask
 
     def to_h_string_gsubs(string)
       string.to_s
-            .gsub(ENV["HOME"], "$HOME")
+            .gsub(Dir.home, "$HOME")
             .gsub(HOMEBREW_PREFIX, "$(brew --prefix)")
     end
 
