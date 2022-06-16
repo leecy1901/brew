@@ -2512,6 +2512,8 @@ module Homebrew::EnvConfig
 
   def self.git_name(); end
 
+  def self.git_path(); end
+
   def self.github_api_token(); end
 
   def self.github_packages_token(); end
@@ -4938,6 +4940,8 @@ module RuboCop::AST::NodePattern::Sets
   SET_INCLUDE_WITH_WITHOUT = ::T.let(nil, ::T.untyped)
   SET_SYSTEM_SHELL_OUTPUT_PIPE_OUTPUT = ::T.let(nil, ::T.untyped)
   SET_WITH_WITHOUT = ::T.let(nil, ::T.untyped)
+  SET__FETCH = ::T.let(nil, ::T.untyped)
+  SET_____2 = ::T.let(nil, ::T.untyped)
 end
 
 class RuboCop::Cask::AST::CaskHeader
